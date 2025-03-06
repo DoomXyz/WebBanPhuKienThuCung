@@ -5,6 +5,7 @@ let router = express.Router();
 
 let initWebRoutes = (app) => {
     router.get('/', homeController.getHomePage);
+    router.get('/about', homeController.comeAbout);
 
     router.get('/trang2', (req, res) => {
         return res.send('Cum to 2')
