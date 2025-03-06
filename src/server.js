@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({ extende: true }))
 viewEngine(app);
 initWebRoutes(app);
 
-let port = process.env.PORT || 6000;
+let port = process.env.PORT;
 
 app.listen(port, () => {
-    console.log("Backend đang chạy sml")
+    console.log("Backend đang chạy sml" + port)
 })
